@@ -27,9 +27,11 @@ class Contactlist:
         with open("D:\\Python Übung\\Folge8\\backup\\contact_list.json", "w") as f:
            f.write(json.dumps(self.contact_list))
         print("Backup completed!")
-    def print (self):
+    def print_contacts(self):
         print(f"Your contacts are: {self.contact_list}")
 
 
 my_contact = Contactlist(path="D:\\Python Übung\\Folge8\\backup\\contact_list.json")
 my_contact.print()
+my_contact.print()
+my_contact.add("John Doe", "123456789")
